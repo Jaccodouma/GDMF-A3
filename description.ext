@@ -1,0 +1,33 @@
+#include "script_mission.hpp"
+
+// Change these, make sure to not have trailing spaces (:
+#define MINPLAYERS 8
+#define MAXPLAYERS 18
+#define MISSIONNAME Operation Syngery
+#define TIMEESTIMATE 60
+
+author = "Jacco";
+
+// Short description
+onLoadMission = "Find and destroy several weapons caches."; 
+
+// Text in mission select screen
+overviewText = "An early cold war US unit is tasked with taking down several insurgent weapons caches while clearing compounds."; 
+
+loadScreen = "picture.paa"; // 2:1 ratio, ideally 1024x512 pixels. 
+
+// Don't touch below here 
+onLoadIntroTime = 1;
+
+class Header 
+{
+	gameType = Coop; // Game type
+	minPlayers = MINPLAYERS; 
+	maxPlayers = MAXPLAYERS; 
+}
+
+briefingName = QUOTE([MINPLAYERS-MAXPLAYERS] MISSIONNAME (TIMEESTIMATE minutes)); // Mission name displayed in mission selection
+onLoadName = QUOTE(MISSIONNAME);
+
+#include "CfgFunctions.hpp"
+#include "Loadouts.hpp"
