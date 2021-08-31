@@ -30,4 +30,3 @@ briefingName = QUOTE([MINPLAYERS-MAXPLAYERS] MISSIONNAME (TIMEESTIMATE minutes))
 onLoadName = QUOTE(MISSIONNAME);
 
 #include "CfgFunctions.hpp"
-#include "Loadouts.hpp"
