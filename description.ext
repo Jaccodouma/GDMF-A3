@@ -31,5 +31,3 @@ class Header
 
 briefingName = QUOTE([MINPLAYERS-MAXPLAYERS] MISSIONNAME (TIMEESTIMATE minutes)); // Mission name displayed in mission selection
 onLoadName = QUOTE(MISSIONNAME);
-
-#include "CfgFunctions.hpp"

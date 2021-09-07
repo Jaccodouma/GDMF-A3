@@ -4,19 +4,11 @@ _gear = [
 //	[name, amount],
 	["ACE_fieldDressing", 20],
 	["ACE_morphine", 4],
-	["ACE_tourniquet", 1],
-	["ACE_splint", 1],
-
-	["ACE_EntrenchingTool", 1],
-
+	["ACE_tourniquet", 2],
 	["ACE_bloodIV_250", 2],
-	["ACRE_PRC343", 1], 
-
-	["UK3CB_M16_30rnd_556x45", 8], 
-	["UK3CB_BAF_SmokeShell", 4]
+	["ACE_splint", 1],
+	["ACRE_PRC343", 1]
 ];
-
-_count = 0; 
 
 {
 	_x params ["_unit"];
@@ -31,5 +23,3 @@ _count = 0;
 	_count = _count+1; 
 } forEach playableUnits;
 save3DENInventory playableUnits;
-
-format ["Changed gear on %1 units", _count]
