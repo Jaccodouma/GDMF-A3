@@ -11,12 +11,15 @@ author = "Jacco";
 // Short description
 onLoadMission = "Find and destroy several weapons caches."; 
 
-// Text in mission select screen
-overviewText = "An early cold war US unit is tasked with taking down several insurgent weapons caches while clearing compounds."; 
+// Text in mission select screen. Should indicate anything important while selecting the mission.
+overviewText = "An early cold war US unit is tasked with taking down several insurgent weapons caches."; 
 
-loadScreen = "picture.paa"; // 2:1 ratio, ideally 1024x512 pixels. 
+loadScreen = "picture.jpg"; // 2:1 ratio, ideally 1024x512 pixels. 
 
-// Don't touch below here 
+
+/////////////////////////////////////////////////////////////////////////////////////
+// DON'T TOUCH BELOW HERE (unless you know what you're doing)
+/////////////////////////////////////////////////////////////////////////////////////
 onLoadIntroTime = 1;
 
 class Header 

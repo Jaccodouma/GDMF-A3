@@ -1,1 +1,0 @@
-// Should be called from briefing menu, applies selected weapon.
