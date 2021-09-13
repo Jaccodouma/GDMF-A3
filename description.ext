@@ -16,7 +16,6 @@ overviewText = "An early cold war US unit is tasked with taking down several ins
 
 loadScreen = "picture.jpg"; // 2:1 ratio, ideally 1024x512 pixels. 
 
-
 /////////////////////////////////////////////////////////////////////////////////////
 // DON'T TOUCH BELOW HERE (unless you know what you're doing)
 /////////////////////////////////////////////////////////////////////////////////////
@@ -31,3 +30,13 @@ class Header
 
 briefingName = QUOTE([MINPLAYERS-MAXPLAYERS] MISSIONNAME (TIMEESTIMATE minutes)); // Mission name displayed in mission selection
 onLoadName = QUOTE(MISSIONNAME);
+
+enableDebugConsole = 1;
+disableChannels[] = {
+	{0, true, true}, 
+	{1, false, true}, 
+	{2, true, true}, 
+	{3, true, true}, 
+	{4, true, true}, 
+	{5, true, true}, 
+};
