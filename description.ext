@@ -41,3 +41,5 @@ disableChannels[] = {
 	{5, true, true}, 
 };
 disabledAi = 1;
+
+#include "CfgFunctions.hpp"
