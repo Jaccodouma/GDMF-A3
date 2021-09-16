@@ -1,6 +1,6 @@
 params ["_giveSRR", "_SRRType", "_GiveLRRTo", "_LRRType", "_LRChannels"];
 
-
+// Set radio 
 if (hasInterface) then {
     // Give SSR 
     if (_giveSRR && count([_SRRType] call acre_api_fnc_getAllRadiosByType)==0) then {
@@ -27,3 +27,12 @@ if (hasInterface) then {
 	["ACRE_PRC148", "default", _forEachIndex+1, "label", _x] call acre_api_fnc_setPresetChannelField;
 	["ACRE_PRC117F", "default", _forEachIndex+1, "name", _x] call acre_api_fnc_setPresetChannelField;
 } forEach _LRChannels;
+
+// Respawn stuff 
+switch (getNumber (missionConfigFile >> "GD_RespawnType")) do 
+{
+    case 0: {
+        // spectate
+    }; 
+    default {};
+}

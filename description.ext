@@ -16,6 +16,8 @@ overviewText = "An early cold war US unit is tasked with taking down several ins
 
 loadScreen = "picture.jpg"; // 2:1 ratio, ideally 1024x512 pixels. 
 
+#include "respawn\spectate.hpp"
+
 /////////////////////////////////////////////////////////////////////////////////////
 // DON'T TOUCH BELOW HERE (unless you know what you're doing)
 /////////////////////////////////////////////////////////////////////////////////////
