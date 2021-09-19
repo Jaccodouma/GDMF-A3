@@ -3,7 +3,11 @@ params ["_giveSRR", "_SRRType", "_GiveLRRTo", "_LRRType", "_LRChannels"];
 // Set radio 
 if (hasInterface) then {
     // Give SSR 
-    if (_giveSRR && count([_SRRType] call acre_api_fnc_getAllRadiosByType)==0) then {
+    if (
+        _giveSRR && 
+        count([_SRRType] call acre_api_fnc_getAllRadiosByType)==0 && 
+        !([player, _SRRType] call BIS_fnc_hasItem)
+    ) then {
         player addItem _SRRType; 
     };
 
@@ -15,7 +19,8 @@ if (hasInterface) then {
             (_GiveLRRTo >= 2) && (player getVariable ["ace_medical_medicclass", 0]>0) ||
             (_GiveLRRTo >= 2) && (player getVariable ["ace_isengineer", 0]>0)
         ) && 
-        count([_LRRType] call acre_api_fnc_getAllRadiosByType) == 0
+        count([_LRRType] call acre_api_fnc_getAllRadiosByType) == 0 && 
+        !([player, _LRRType] call BIS_fnc_hasItem)
     ) then {
         player addItem _LRRType; 
     };
