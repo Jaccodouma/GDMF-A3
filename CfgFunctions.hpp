@@ -16,5 +16,11 @@ class CfgFunctions
 			class init {};
 			class scaleDamage {}; 
 		}
-	}
+		class Admin
+		{
+			class initAdmin {};
+			class removeAdminMenu {};
+			class updateAdminMenu {};
+		};
+	};
 };
