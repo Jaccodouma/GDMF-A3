@@ -1,11 +1,11 @@
-GD_RespawnType = 0; 
+GD_RespawnType = 1; 
 
-respawn = 3;
+respawn = 2;
 respawnButton = 0; 
 
-respawnDelay = 14400; // 4 hours? x) 
+respawnDelay = 0; // 4 hours? x) 
 respawnVehicleDelay = 120; // In case you use this
 respawnDialog = 0; 
 respawnOnStart = 0; 
 
-respawnTemplates[] = {"ace_spectator"}; 
+respawnTemplates[] = {"ace_spectator", "Tickets"}; 
