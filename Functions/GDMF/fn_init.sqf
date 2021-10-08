@@ -41,7 +41,7 @@ switch (getNumber (missionConfigFile >> "GD_RespawnType")) do
     case 0: {
         // spectate
         [player,  1] call BIS_fnc_respawnTickets;
-        [player, -1] call BIS_fnc_respawnTickets;
+        [missionNameSpace, 1] call BIS_fnc_respawnTickets;
     }; 
     default {};
 }
