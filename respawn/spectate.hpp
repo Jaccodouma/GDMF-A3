@@ -8,4 +8,4 @@ respawnVehicleDelay = 120; // In case you use this
 respawnDialog = 0; 
 respawnOnStart = 0; 
 
-respawnTemplates[] = {"ace_spectator", "Tickets"}; 
+respawnTemplates[] = {"Spectator", "Tickets"}; 
