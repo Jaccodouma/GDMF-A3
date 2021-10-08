@@ -1,9 +1,6 @@
 params ["_giveSRR", "_SRRType", "_GiveLRRTo", "_LRRType", "_LRChannels"];
 
 // Set respawn tickets 
-if (getNumber (missionConfigFile >> "respawn") == 2) then {
-    [player,-1] call BIS_fnc_respawnTickets;
-};
 
 // Set radio 
 if (hasInterface) then {
@@ -43,6 +40,8 @@ switch (getNumber (missionConfigFile >> "GD_RespawnType")) do
 {
     case 0: {
         // spectate
+        [player,  1] call BIS_fnc_respawnTickets;
+        [player, -1] call BIS_fnc_respawnTickets;
     }; 
     default {};
 }

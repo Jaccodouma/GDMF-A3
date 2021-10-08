@@ -1,6 +1,6 @@
-GD_RespawnType = 1; 
+GD_RespawnType = 0; 
 
-respawn = 2;
+respawn = 3;
 respawnButton = 0; 
 
 respawnDelay = 0; // 4 hours? x) 
